@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A progress gallery for ten short videos about bias, evidence, and better research design."
+    />
+    <title>Interactive Video Generation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Interactive Video Generation home">
+        <span class="brand-mark" aria-hidden="true">▶</span>
+        <span>Interactive Video Generation</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#progress">Checklist</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="header-link" href="#videos">Explore <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">BIAS VIDEO SERIES</p>
+        <h1 id="page-title">How can evidence mislead us?</h1>
+        <p class="hero-copy">
+          Ten short visual stories about judgment, data selection, scientific evidence,
+          and the tools we use to think more clearly.
+        </p>
+        <a class="primary-button" href="#progress">View series progress</a>
+      </section>
+
+      <section class="progress-section" id="progress" aria-labelledby="progress-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PRODUCTION CHECKLIST</p>
+            <h2 id="progress-title">From idea to finished series</h2>
+          </div>
+          <p class="progress-summary"><strong>1 of 10</strong> videos in active production</p>
+        </div>
+
+        <div class="checklist" role="list" aria-label="Series production checklist">
+          <div class="check-item is-complete" role="listitem">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <div><strong>Series concept</strong><span>Theme and audience defined</span></div>
+          </div>
+          <div class="check-item is-complete" role="listitem">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <div><strong>10 video topics</strong><span>Full topic roadmap ready</span></div>
+          </div>
+          <div class="check-item is-active" role="listitem">
+            <span class="check-icon" aria-hidden="true">3</span>
+            <div><strong>Story &amp; scenes</strong><span>Writing and review in progress</span></div>
+          </div>
+          <div class="check-item" role="listitem">
+            <span class="check-icon" aria-hidden="true">4</span>
+            <div><strong>Video production</strong><span>Generate and assemble scenes</span></div>
+          </div>
+          <div class="check-item" role="listitem">
+            <span class="check-icon" aria-hidden="true">5</span>
+            <div><strong>Publish series</strong><span>Final review and release</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="videos-section" id="videos" aria-labelledby="videos-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">EXPLORE THE SERIES</p>
+            <h2 id="videos-title">Ten ways evidence can fool us</h2>
+          </div>
+          <div class="filters" aria-label="Filter videos">
+            <button class="filter is-selected" type="button" data-filter="all">All <span>10</span></button>
+            <button class="filter" type="button" data-filter="judgment">Judgment <span>2</span></button>
+            <button class="filter" type="button" data-filter="selection">Data &amp; Selection <span>4</span></button>
+            <button class="filter" type="button" data-filter="evidence">Scientific Evidence <span>3</span></button>
+            <button class="filter" type="button" data-filter="design">Better Design <span>1</span></button>
+          </div>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card" data-category="judgment">
+            <div class="card-cover tone-purple">
+              <span class="video-number">01</span><span class="cover-label">HUMAN JUDGMENT</span>
+              <h3>Confirmation Bias</h3><span class="orbit orbit-nodes" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>Why do we notice evidence that agrees with us?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="judgment">
+            <div class="card-cover tone-purple">
+              <span class="video-number">02</span><span class="cover-label">HUMAN JUDGMENT</span>
+              <h3>Friendship Paradox</h3><span class="orbit orbit-network" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-production">In production</span><p>Why do your friends seem to have more friends than you?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="selection">
+            <div class="card-cover tone-indigo">
+              <span class="video-number">03</span><span class="cover-label">DATA &amp; SELECTION</span>
+              <h3>Survivorship Bias</h3><span class="orbit orbit-gap" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>Who is missing from the success story?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="selection">
+            <div class="card-cover tone-blue">
+              <span class="video-number">04</span><span class="cover-label">DATA &amp; SELECTION</span>
+              <h3>COVID Paradox:<br />Competing Risks</h3><span class="orbit orbit-path" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>Why can one outcome change the observed rate of another?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="selection">
+            <div class="card-cover tone-blue">
+              <span class="video-number">05</span><span class="cover-label">DATA &amp; SELECTION</span>
+              <h3>Regression to the Mean</h3><span class="orbit orbit-wave" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>Why can someone improve with no treatment at all?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="selection">
+            <div class="card-cover tone-blue">
+              <span class="video-number">06</span><span class="cover-label">DATA &amp; SELECTION</span>
+              <h3>Berkson’s Paradox</h3><span class="orbit orbit-scatter" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>How can selection create a correlation?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="evidence">
+            <div class="card-cover tone-teal">
+              <span class="video-number">07</span><span class="cover-label">SCIENTIFIC EVIDENCE</span>
+              <h3>Publication Bias</h3><span class="orbit orbit-filter" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>Why are significant results overrepresented?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="evidence">
+            <div class="card-cover tone-teal">
+              <span class="video-number">08</span><span class="cover-label">SCIENTIFIC EVIDENCE</span>
+              <h3>Winner’s Curse</h3><span class="orbit orbit-crown" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>Why are “winning” effects often exaggerated?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="evidence">
+            <div class="card-cover tone-teal">
+              <span class="video-number">09</span><span class="cover-label">SCIENTIFIC EVIDENCE</span>
+              <h3>Funding Bias &amp; Multiplicity</h3><span class="orbit orbit-dots" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>How can many tests manufacture a trend?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+
+          <article class="video-card" data-category="design">
+            <div class="card-cover tone-orange">
+              <span class="video-number">10</span><span class="cover-label">BETTER DESIGN</span>
+              <h3>Mitigating Bias</h3><span class="orbit orbit-shield" aria-hidden="true"></span>
+            </div>
+            <div class="card-body"><span class="status status-planning">Planning</span><p>What research-design tools reduce these problems?</p><button type="button" disabled>Video coming soon</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">ABOUT THE PROJECT</p>
+        <h2 id="about-title">Bias becomes easier to understand when we can see the mechanism.</h2>
+        <p>This evolving video series turns statistical ideas into short, visual explanations for curious viewers—no statistics background required.</p>
+      </section>
+    </main>
+
+    <footer><span>Interactive Video Generation</span><span>Bias Video Series · 2026</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
