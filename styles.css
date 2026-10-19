@@ -53,6 +53,12 @@ h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -.035em; }
 .progress-table tbody th { font-family: "DM Sans", sans-serif; font-size: .9rem; font-weight: 600; }
 .progress-table tbody td { color: #4f5d72; font-size: .88rem; }
 .table-number { color: var(--ink); font-size: .9rem; font-weight: 700; }
+.status-chip { display: inline-block; padding: 5px 9px; border: 1px solid transparent; border-radius: 5px; font-size: .78rem; font-weight: 700; line-height: 1.2; white-space: nowrap; }
+.status-not-started { border-color: #d4dae2; background: #edf0f4; color: #667286; }
+.status-plan-ready { border-color: #cfc1fa; background: #eee9ff; color: #5d35bb; }
+.status-approved { border-color: #a9d9bd; background: #def3e6; color: #176b3d; }
+.status-review { border-color: #f0cc8b; background: #fff0d2; color: #8a5706; }
+.status-making { border-color: #afd2ee; background: #e3f2fc; color: #155f91; }
 .finish-column { width: 86px; text-align: center !important; }
 .not-finished { color: #a9b3c1; font-size: 1.1rem; font-weight: 700; }
 .finished-check { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: #188750; color: white; font-weight: 800; }
