@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <header class="site-header">
@@ -182,9 +182,13 @@
             aria-haspopup="dialog"
             aria-label="Watch the final video for Friendship Paradox"
           >
-            <div class="card-cover tone-purple">
-              <span class="video-number">02</span><span class="cover-label">HUMAN JUDGMENT</span>
-              <h3>Friendship Paradox</h3><span class="orbit orbit-network" aria-hidden="true"></span>
+            <div class="card-cover poster-cover">
+              <img
+                class="poster-image"
+                src="media/friendship-paradox-cover.webp"
+                alt="Friendship Paradox episode 02 poster"
+              />
+              <span class="poster-play" aria-hidden="true">▶</span>
             </div>
             <div class="card-body"><span class="status status-production">Finished</span><p>Why do your friends seem to have more friends than you?</p><button class="watch-button" type="button">Watch full video</button></div>
           </article>
@@ -220,9 +224,13 @@
             aria-haspopup="dialog"
             aria-label="Watch the final video for COVID Paradox: Competing Risks"
           >
-            <div class="card-cover tone-blue">
-              <span class="video-number">04</span><span class="cover-label">DATA &amp; SELECTION</span>
-              <h3>COVID Paradox:<br />Competing Risks</h3><span class="orbit orbit-path" aria-hidden="true"></span>
+            <div class="card-cover poster-cover">
+              <img
+                class="poster-image"
+                src="media/covid-paradox-cover.webp"
+                alt="COVID Paradox episode 04 poster"
+              />
+              <span class="poster-play" aria-hidden="true">▶</span>
             </div>
             <div class="card-body"><span class="status status-production">Finished</span><p>Why can one outcome change the observed rate of another?</p><button class="watch-button" type="button">Watch full video</button></div>
           </article>
@@ -310,13 +318,17 @@
       <button class="modal-backdrop" type="button" aria-label="Close video"></button>
       <div class="modal-panel">
         <button class="modal-close" type="button" aria-label="Close video">×</button>
-        <p class="modal-label" id="modal-label">CURRENT PROGRESS · REVIEW ONLY</p>
-        <h2 id="modal-title"></h2>
-        <p class="modal-progress" id="modal-progress"></p>
-        <video id="modal-video" controls preload="metadata" playsinline>
-          Your browser does not support HTML video.
-        </video>
-        <p class="modal-note">This is a work-in-progress review assembly, not the finished video.</p>
+        <div class="modal-video-wrap">
+          <video id="modal-video" controls preload="metadata" playsinline>
+            Your browser does not support HTML video.
+          </video>
+        </div>
+        <div class="modal-details">
+          <p class="modal-label" id="modal-label">CURRENT PROGRESS · REVIEW ONLY</p>
+          <h2 id="modal-title"></h2>
+          <p class="modal-progress" id="modal-progress"></p>
+          <p class="modal-note">This is a work-in-progress review assembly, not the finished video.</p>
+        </div>
       </div>
     </div>
     <script src="script.js?v=3"></script>
