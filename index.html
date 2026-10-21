@@ -38,10 +38,18 @@
           Ten short visual stories about judgment, data selection, scientific evidence,
           and the tools we use to think more clearly.
         </p>
-        <a class="primary-button" href="#progress">View series progress</a>
+        <button
+          class="primary-button"
+          id="progress-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="progress"
+        >
+          View series progress
+        </button>
       </section>
 
-      <section class="progress-section" id="progress" aria-labelledby="progress-title">
+      <section class="progress-section" id="progress" aria-labelledby="progress-title" hidden>
         <h2 class="sr-only" id="progress-title">Video progress checklist</h2>
 
         <div class="table-wrap">
@@ -66,9 +74,9 @@
               <tr>
                 <td data-label="Video"><span class="table-number">02</span></td>
                 <th scope="row">Friendship Paradox</th>
-                <td><span class="status-chip status-plan-ready">Plan ready</span></td>
-                <td><span class="status-chip status-making">Scenes 1–6 of 9 · Review</span></td>
-                <td data-label="Finished" class="finish-column"><span class="not-finished" aria-label="Not finished">—</span></td>
+                <td><span class="status-chip status-approved">Approved</span></td>
+                <td><span class="status-chip status-approved">Complete</span></td>
+                <td data-label="Finished" class="finish-column"><span class="finished-check" aria-label="Finished">✓</span></td>
               </tr>
               <tr>
                 <td data-label="Video"><span class="table-number">03</span></td>
@@ -158,19 +166,21 @@
           <article
             class="video-card is-playable"
             data-category="judgment"
-            data-video="media/friendship-paradox-scenes-1-6-review.mp4"
+            data-video="media/friendship-paradox-final.mp4"
             data-title="Friendship Paradox"
-            data-progress="Scenes 1–6 of 9 · REVIEW ONLY"
+            data-progress="FINAL VIDEO"
+            data-modal-label="FINAL VIDEO"
+            data-note="Final cut of Friendship Paradox."
             role="button"
             tabindex="0"
             aria-haspopup="dialog"
-            aria-label="Watch current progress for Friendship Paradox"
+            aria-label="Watch the final video for Friendship Paradox"
           >
             <div class="card-cover tone-purple">
               <span class="video-number">02</span><span class="cover-label">HUMAN JUDGMENT</span>
               <h3>Friendship Paradox</h3><span class="orbit orbit-network" aria-hidden="true"></span>
             </div>
-            <div class="card-body"><span class="status status-production">Making · Scene 6</span><p>Why do your friends seem to have more friends than you?</p><button class="watch-button" type="button">Watch current progress</button></div>
+            <div class="card-body"><span class="status status-production">Finished</span><p>Why do your friends seem to have more friends than you?</p><button class="watch-button" type="button">Watch full video</button></div>
           </article>
 
           <article
@@ -197,6 +207,7 @@
             data-video="media/covid-paradox-final.mp4"
             data-title="COVID Paradox: Competing Risks"
             data-progress="FINAL VIDEO"
+            data-modal-label="FINAL VIDEO"
             data-note="Final cut of COVID Paradox: Competing Risks."
             role="button"
             tabindex="0"
@@ -293,7 +304,7 @@
       <button class="modal-backdrop" type="button" aria-label="Close video"></button>
       <div class="modal-panel">
         <button class="modal-close" type="button" aria-label="Close video">×</button>
-        <p class="modal-label">CURRENT PROGRESS · REVIEW ONLY</p>
+        <p class="modal-label" id="modal-label">CURRENT PROGRESS · REVIEW ONLY</p>
         <h2 id="modal-title"></h2>
         <p class="modal-progress" id="modal-progress"></p>
         <video id="modal-video" controls preload="metadata" playsinline>

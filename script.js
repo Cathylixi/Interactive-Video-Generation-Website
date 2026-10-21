@@ -1,7 +1,11 @@
 const filters = document.querySelectorAll(".filter");
 const cards = document.querySelectorAll(".video-card");
 const playableCards = document.querySelectorAll(".video-card.is-playable");
+const progressToggle = document.querySelector("#progress-toggle");
+const progressSection = document.querySelector("#progress");
+const checklistLink = document.querySelector('nav a[href="#progress"]');
 const modal = document.querySelector("#video-modal");
+const modalLabel = document.querySelector("#modal-label");
 const modalTitle = document.querySelector("#modal-title");
 const modalProgress = document.querySelector("#modal-progress");
 const modalVideo = document.querySelector("#modal-video");
@@ -9,6 +13,25 @@ const modalNote = document.querySelector(".modal-note");
 const modalClose = document.querySelector(".modal-close");
 const modalBackdrop = document.querySelector(".modal-backdrop");
 let opener = null;
+
+function setProgressVisible(visible, shouldScroll = false) {
+  progressSection.hidden = !visible;
+  progressToggle.setAttribute("aria-expanded", String(visible));
+  progressToggle.textContent = visible ? "Hide series progress" : "View series progress";
+
+  if (visible && shouldScroll) {
+    requestAnimationFrame(() => progressSection.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }
+}
+
+progressToggle.addEventListener("click", () => {
+  setProgressVisible(progressSection.hidden, progressSection.hidden);
+});
+
+checklistLink.addEventListener("click", (event) => {
+  event.preventDefault();
+  setProgressVisible(true, true);
+});
 
 filters.forEach((filter) => {
   filter.addEventListener("click", () => {
@@ -26,6 +49,7 @@ filters.forEach((filter) => {
 
 function openVideo(card) {
   opener = card;
+  modalLabel.textContent = card.dataset.modalLabel || "CURRENT PROGRESS · REVIEW ONLY";
   modalTitle.textContent = card.dataset.title;
   modalProgress.textContent = card.dataset.progress;
   modalNote.textContent =
