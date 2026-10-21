@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body>
     <header class="site-header">
@@ -32,21 +32,27 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">BIAS VIDEO SERIES</p>
-        <h1 id="page-title">How can evidence mislead us?</h1>
-        <p class="hero-copy">
-          Ten short visual stories about judgment, data selection, scientific evidence,
-          and the tools we use to think more clearly.
-        </p>
-        <button
-          class="primary-button"
-          id="progress-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="progress"
-        >
-          View series progress
-        </button>
+        <div class="hero-layout">
+          <div class="hero-text">
+            <p class="eyebrow">BIAS VIDEO SERIES</p>
+            <h1 id="page-title">How can evidence mislead us?</h1>
+            <p class="hero-copy">
+              Ten short visual stories about judgment, data selection, scientific evidence,
+              and the tools we use to think more clearly.
+            </p>
+          </div>
+          <div class="hero-action">
+            <button
+              class="primary-button"
+              id="progress-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="progress"
+            >
+              View series progress
+            </button>
+          </div>
+        </div>
       </section>
 
       <section class="progress-section" id="progress" aria-labelledby="progress-title" hidden>
@@ -313,6 +319,6 @@
         <p class="modal-note">This is a work-in-progress review assembly, not the finished video.</p>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>
