@@ -5,11 +5,8 @@ const progressToggle = document.querySelector("#progress-toggle");
 const progressSection = document.querySelector("#progress");
 const checklistLink = document.querySelector('nav a[href="#progress"]');
 const modal = document.querySelector("#video-modal");
-const modalLabel = document.querySelector("#modal-label");
 const modalTitle = document.querySelector("#modal-title");
-const modalProgress = document.querySelector("#modal-progress");
 const modalVideo = document.querySelector("#modal-video");
-const modalNote = document.querySelector(".modal-note");
 const modalClose = document.querySelector(".modal-close");
 const modalBackdrop = document.querySelector(".modal-backdrop");
 let opener = null;
@@ -49,11 +46,7 @@ filters.forEach((filter) => {
 
 function openVideo(card) {
   opener = card;
-  modalLabel.textContent = card.dataset.modalLabel || "CURRENT PROGRESS · REVIEW ONLY";
   modalTitle.textContent = card.dataset.title;
-  modalProgress.textContent = card.dataset.progress;
-  modalNote.textContent =
-    card.dataset.note || "This is a work-in-progress review assembly, not the finished video.";
   modalVideo.src = card.dataset.video;
   modal.hidden = false;
   document.body.classList.add("modal-open");

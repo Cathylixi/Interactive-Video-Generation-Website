@@ -138,11 +138,8 @@ h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -.035em; }
 .modal-close:hover, .modal-close:focus-visible { background: #dfe6ef; }
 .modal-video-wrap { min-width: 0; }
 .modal-details { min-width: 0; padding-right: 22px; }
-.modal-label { margin: 0 0 10px; color: #b66000; font-size: .76rem; font-weight: 800; letter-spacing: .1em; }
-.modal-panel h2 { padding-right: 0; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.05; }
-.modal-progress { margin: 8px 0 20px; color: #157245; font-weight: 700; }
+.modal-panel h2 { padding-right: 0; font-size: clamp(2rem, 4.5vw, 3.4rem); line-height: 1.05; }
 .modal-panel video { display: block; width: 100%; aspect-ratio: 9 / 16; max-height: min(80vh, 720px); border-radius: 14px; background: #0c1423; object-fit: contain; }
-.modal-note { margin: 22px 0 0; color: var(--muted); font-size: .96rem; line-height: 1.6; }
 
 .about-section { margin-bottom: 90px; padding: clamp(35px, 6vw, 68px); border-radius: 24px; background: var(--ink); color: white; }
 .about-section .eyebrow { color: var(--orange); }
