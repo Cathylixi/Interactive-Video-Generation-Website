@@ -5,6 +5,7 @@ const modal = document.querySelector("#video-modal");
 const modalTitle = document.querySelector("#modal-title");
 const modalProgress = document.querySelector("#modal-progress");
 const modalVideo = document.querySelector("#modal-video");
+const modalNote = document.querySelector(".modal-note");
 const modalClose = document.querySelector(".modal-close");
 const modalBackdrop = document.querySelector(".modal-backdrop");
 let opener = null;
@@ -27,6 +28,8 @@ function openVideo(card) {
   opener = card;
   modalTitle.textContent = card.dataset.title;
   modalProgress.textContent = card.dataset.progress;
+  modalNote.textContent =
+    card.dataset.note || "This is a work-in-progress review assembly, not the finished video.";
   modalVideo.src = card.dataset.video;
   modal.hidden = false;
   document.body.classList.add("modal-open");
