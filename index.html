@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=12" />
+    <link rel="stylesheet" href="styles.css?v=13" />
   </head>
   <body>
     <header class="site-header">
@@ -50,7 +50,19 @@
               View series progress
             </button>
           </div>
-          <div class="hero-trailer-slot" aria-hidden="true"></div>
+          <div class="hero-trailer-slot">
+            <video
+              class="hero-trailer"
+              controls
+              playsinline
+              preload="metadata"
+              poster="media/series-trailer-cover.png"
+              aria-label="Watch the Bias Video Series trailer"
+            >
+              <source src="media/series-trailer-final.mp4" type="video/mp4" />
+              Your browser does not support the video element.
+            </video>
+          </div>
         </div>
       </section>
 
