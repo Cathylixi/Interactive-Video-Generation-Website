@@ -120,7 +120,7 @@ h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -.035em; }
 .orbit-shield { border-radius: 50% 50% 60% 60% / 35% 35% 75% 75%; }
 .card-body { padding: 11px 2px 0; }
 .card-body h3 { margin: 0; display: -webkit-box; overflow: hidden; color: var(--ink); font-family: Manrope, sans-serif; font-size: 1rem; font-weight: 700; line-height: 1.35; letter-spacing: -.015em; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
-.card-body p { margin: 6px 0 0; display: -webkit-box; overflow: hidden; color: var(--muted); font-size: .84rem; line-height: 1.45; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.card-body p { margin: 5px 0 0; display: -webkit-box; overflow: hidden; color: var(--muted); font-size: .76rem; line-height: 1.4; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 
 .video-modal[hidden] { display: none; }
 .video-modal { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 24px; }
