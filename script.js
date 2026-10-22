@@ -5,7 +5,6 @@ const progressToggle = document.querySelector("#progress-toggle");
 const progressSection = document.querySelector("#progress");
 const checklistLink = document.querySelector('nav a[href="#progress"]');
 const modal = document.querySelector("#video-modal");
-const modalTitle = document.querySelector("#modal-title");
 const modalVideo = document.querySelector("#modal-video");
 const modalClose = document.querySelector(".modal-close");
 const modalBackdrop = document.querySelector(".modal-backdrop");
@@ -46,7 +45,6 @@ filters.forEach((filter) => {
 
 function openVideo(card) {
   opener = card;
-  modalTitle.textContent = card.dataset.title;
   modalVideo.src = card.dataset.video;
   modal.hidden = false;
   document.body.classList.add("modal-open");

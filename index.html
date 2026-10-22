@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=6" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body>
     <header class="site-header">
@@ -165,7 +165,7 @@
             <div class="card-cover tone-purple">
               <span class="orbit orbit-nodes" aria-hidden="true"></span>
             </div>
-            <div class="card-body"><h3>Confirmation Bias</h3></div>
+            <div class="card-body"><h3>Confirmation Bias</h3><p>Why do we notice evidence that agrees with us?</p></div>
           </article>
 
           <article
@@ -184,9 +184,10 @@
                 src="media/friendship-paradox-thumbnail.webp"
                 alt="Friendship Paradox"
               />
+              <span class="video-duration">2:02</span>
               <span class="poster-play" aria-hidden="true">▶</span>
             </div>
-            <div class="card-body"><h3>Friendship Paradox</h3></div>
+            <div class="card-body"><h3>Friendship Paradox</h3><p>Why do your friends seem to have more friends than you?</p></div>
           </article>
 
           <article
@@ -205,9 +206,10 @@
                 src="media/survivorship-bias-thumbnail.webp"
                 alt="Survivorship Bias"
               />
+              <span class="video-duration">1:57</span>
               <span class="poster-play" aria-hidden="true">▶</span>
             </div>
-            <div class="card-body"><h3>Survivorship Bias</h3></div>
+            <div class="card-body"><h3>Survivorship Bias</h3><p>Who is missing from the success story?</p></div>
           </article>
 
           <article
@@ -226,9 +228,10 @@
                 src="media/covid-paradox-thumbnail.webp"
                 alt="COVID Paradox: Competing Risks"
               />
+              <span class="video-duration">1:31</span>
               <span class="poster-play" aria-hidden="true">▶</span>
             </div>
-            <div class="card-body"><h3>COVID Paradox: Competing Risks</h3></div>
+            <div class="card-body"><h3>COVID Paradox: Competing Risks</h3><p>Why can one outcome change the observed rate of another?</p></div>
           </article>
 
           <article
@@ -243,30 +246,31 @@
           >
             <div class="card-cover tone-blue">
               <span class="orbit orbit-wave" aria-hidden="true"></span>
+              <span class="video-duration">1:09</span>
               <span class="poster-play" aria-hidden="true">▶</span>
             </div>
-            <div class="card-body"><h3>Regression to the Mean</h3></div>
+            <div class="card-body"><h3>Regression to the Mean</h3><p>Why can someone improve with no treatment at all?</p></div>
           </article>
 
           <article class="video-card" data-category="selection">
             <div class="card-cover tone-blue">
               <span class="orbit orbit-scatter" aria-hidden="true"></span>
             </div>
-            <div class="card-body"><h3>Berkson’s Paradox</h3></div>
+            <div class="card-body"><h3>Berkson’s Paradox</h3><p>How can selection create a correlation?</p></div>
           </article>
 
           <article class="video-card" data-category="evidence">
             <div class="card-cover tone-teal">
               <span class="orbit orbit-filter" aria-hidden="true"></span>
             </div>
-            <div class="card-body"><h3>Publication Bias</h3></div>
+            <div class="card-body"><h3>Publication Bias</h3><p>Why are significant results overrepresented?</p></div>
           </article>
 
           <article class="video-card" data-category="evidence">
             <div class="card-cover tone-teal">
               <span class="orbit orbit-crown" aria-hidden="true"></span>
             </div>
-            <div class="card-body"><h3>Winner’s Curse</h3></div>
+            <div class="card-body"><h3>Winner’s Curse</h3><p>Why are “winning” effects often exaggerated?</p></div>
           </article>
 
           <article
@@ -281,16 +285,17 @@
           >
             <div class="card-cover tone-teal">
               <span class="orbit orbit-dots" aria-hidden="true"></span>
+              <span class="video-duration">0:45</span>
               <span class="poster-play" aria-hidden="true">▶</span>
             </div>
-            <div class="card-body"><h3>Funding Bias &amp; Multiplicity</h3></div>
+            <div class="card-body"><h3>Funding Bias &amp; Multiplicity</h3><p>How can many tests manufacture a trend?</p></div>
           </article>
 
           <article class="video-card" data-category="design">
             <div class="card-cover tone-orange">
               <span class="orbit orbit-shield" aria-hidden="true"></span>
             </div>
-            <div class="card-body"><h3>Mitigating Bias</h3></div>
+            <div class="card-body"><h3>Mitigating Bias</h3><p>What research-design tools reduce these problems?</p></div>
           </article>
         </div>
       </section>
@@ -304,7 +309,7 @@
 
     <footer><span>Interactive Video Generation</span><span>Bias Video Series · 2026</span></footer>
 
-    <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
       <button class="modal-backdrop" type="button" aria-label="Close video"></button>
       <div class="modal-panel">
         <button class="modal-close" type="button" aria-label="Close video">×</button>
@@ -313,11 +318,8 @@
             Your browser does not support HTML video.
           </video>
         </div>
-        <div class="modal-details">
-          <h2 id="modal-title"></h2>
-        </div>
       </div>
     </div>
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=5"></script>
   </body>
 </html>
