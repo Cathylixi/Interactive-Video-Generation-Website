@@ -47,15 +47,16 @@ nav a:hover, nav a:focus-visible, .header-link:hover, .header-link:focus-visible
     linear-gradient(135deg, #101d32 0%, #1d3152 100%);
   color: white;
 }
-.hero-layout { width: min(1240px, calc(100% - 40px)); margin-inline: auto; display: grid; grid-template-columns: minmax(0, 800px) auto; align-items: center; justify-content: space-between; gap: clamp(45px, 8vw, 120px); }
+.hero-layout { width: min(1240px, calc(100% - 40px)); margin-inline: auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 430px); align-items: center; gap: clamp(42px, 7vw, 96px); }
 .hero-text { min-width: 0; }
-.hero-action { min-height: 172px; display: flex; align-items: center; justify-content: flex-end; padding-left: clamp(38px, 5vw, 72px); border-left: 1px solid rgba(255, 255, 255, .16); }
+.hero-trailer-slot { min-height: 300px; }
 .hero .eyebrow { color: #f6ad36; }
 .eyebrow { margin: 0 0 13px; color: #6541d9; font-size: .78rem; font-weight: 800; letter-spacing: .14em; }
 h1, h2, h3 { font-family: Manrope, sans-serif; }
-h1 { max-width: 800px; margin: 0; font-size: clamp(2.8rem, 7vw, 5.6rem); line-height: .98; letter-spacing: -.055em; }
-.hero-copy { max-width: 660px; margin: 26px 0 0; color: #c8d2e2; font-size: clamp(1rem, 2vw, 1.18rem); line-height: 1.65; }
+h1 { max-width: 760px; margin: 0; font-size: clamp(2.7rem, 6vw, 5rem); line-height: 1; letter-spacing: -.052em; }
+.hero-copy { max-width: 650px; margin: 24px 0 0; color: #c8d2e2; font-size: clamp(.92rem, 1.5vw, 1.06rem); line-height: 1.6; }
 .primary-button { display: inline-flex; padding: 14px 22px; border: 0; border-radius: 12px; background: var(--orange); color: var(--ink); cursor: pointer; font-weight: 800; box-shadow: 0 8px 20px rgba(255, 159, 10, .22); }
+.hero-text .primary-button { margin-top: 26px; }
 .primary-button:hover, .primary-button:focus-visible { background: #ffb638; }
 
 .progress-section { scroll-margin-top: 94px; padding: 0 0 28px; background: var(--white); }
@@ -142,7 +143,7 @@ footer span:first-child { color: white; font-weight: 700; }
   .site-header { grid-template-columns: 1fr auto; }
   nav { display: none; }
   .hero-layout { grid-template-columns: 1fr; gap: 26px; }
-  .hero-action { min-height: 0; justify-content: flex-start; padding: 0; border-left: 0; }
+  .hero-trailer-slot { display: none; }
   .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .modal-panel { width: min(430px, calc(100vw - 32px)); }
 }
