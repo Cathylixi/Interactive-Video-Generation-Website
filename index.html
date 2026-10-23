@@ -83,10 +83,10 @@
             <tbody>
               <tr>
                 <td data-label="Video"><span class="table-number">01</span></td>
-                <th scope="row">Confirmation Bias</th>
-                <td><span class="status-chip status-not-started">Not started</span></td>
-                <td><span class="status-chip status-not-started">Not started</span></td>
-                <td data-label="Finished" class="finish-column"><span class="not-finished" aria-label="Not finished">—</span></td>
+                <th scope="row">Series Introduction</th>
+                <td><span class="status-chip status-approved">Approved</span></td>
+                <td><span class="status-chip status-approved">Complete</span></td>
+                <td data-label="Finished" class="finish-column"><span class="finished-check" aria-label="Finished">✓</span></td>
               </tr>
               <tr>
                 <td data-label="Video"><span class="table-number">02</span></td>
@@ -172,11 +172,26 @@
         </div>
 
         <div class="video-grid">
-          <article class="video-card" data-category="judgment">
-            <div class="card-cover tone-purple">
-              <span class="orbit orbit-nodes" aria-hidden="true"></span>
+          <article
+            class="video-card is-playable"
+            data-category="judgment"
+            data-video="media/series-trailer-final.mp4?v=2"
+            data-title="Series Introduction"
+            role="button"
+            tabindex="0"
+            aria-haspopup="dialog"
+            aria-label="Watch the Bias Video Series introduction"
+          >
+            <div class="card-cover poster-cover">
+              <img
+                class="poster-image"
+                src="media/series-trailer-cover.png"
+                alt="Evidence Can Fool Us — Bias Video Series introduction"
+              />
+              <span class="video-duration">1:18</span>
+              <span class="poster-play" aria-hidden="true">▶</span>
             </div>
-            <div class="card-body"><h3>Confirmation Bias</h3><p>Why do we notice evidence that agrees with us?</p></div>
+            <div class="card-body"><h3>Series Introduction</h3><p>How can evidence fool us—and how can we notice?</p></div>
           </article>
 
           <article
