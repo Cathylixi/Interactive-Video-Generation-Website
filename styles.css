@@ -143,6 +143,16 @@ h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -.035em; }
 .about-section .eyebrow { color: var(--orange); }
 .about-section h2 { max-width: 850px; }
 .about-section > p:last-child { max-width: 700px; margin: 25px 0 0; color: #c3cddd; font-size: 1.08rem; line-height: 1.7; }
+footer {
+  min-height: 100px;
+  padding: 30px 20px;
+  display: grid;
+  place-items: center;
+  background: #111b2d;
+  color: #9eabba;
+  font-size: .9rem;
+  text-align: center;
+}
 @media (max-width: 920px) {
   .site-header { grid-template-columns: 1fr auto; }
   nav { display: none; }
