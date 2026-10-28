@@ -31,9 +31,8 @@ button { font: inherit; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--orange); font-family: Manrope, sans-serif; font-weight: 800; }
 .brand-mark { display: grid; place-items: center; width: 29px; height: 29px; border-radius: 9px; color: var(--ink); background: var(--orange); font-size: 12px; }
 nav { display: flex; gap: 34px; }
-nav a, .header-link { font-weight: 600; transition: color .2s ease; }
-nav a:hover, nav a:focus-visible, .header-link:hover, .header-link:focus-visible { color: var(--orange); }
-.header-link { justify-self: end; color: var(--orange); }
+nav a { font-weight: 600; transition: color .2s ease; }
+nav a:hover, nav a:focus-visible { color: var(--orange); }
 
 .progress-section, .videos-section, .about-section { width: min(1240px, calc(100% - 40px)); margin-inline: auto; }
 .hero {
@@ -144,9 +143,6 @@ h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -.035em; }
 .about-section .eyebrow { color: var(--orange); }
 .about-section h2 { max-width: 850px; }
 .about-section > p:last-child { max-width: 700px; margin: 25px 0 0; color: #c3cddd; font-size: 1.08rem; line-height: 1.7; }
-footer { min-height: 100px; padding: 30px max(20px, calc((100% - 1240px) / 2)); display: flex; justify-content: space-between; align-items: center; gap: 20px; background: #111b2d; color: #9eabba; font-size: .9rem; }
-footer span:first-child { color: white; font-weight: 700; }
-
 @media (max-width: 920px) {
   .site-header { grid-template-columns: 1fr auto; }
   nav { display: none; }
@@ -159,7 +155,6 @@ footer span:first-child { color: white; font-weight: 700; }
 @media (max-width: 720px) {
   .site-header { min-height: 64px; padding-inline: 16px; }
   .brand span:last-child { max-width: 175px; line-height: 1.05; }
-  .header-link { display: none; }
   .hero { padding: 60px 0 34px; }
   .progress-section { width: calc(100% - 24px); }
   .section-heading { align-items: flex-start; flex-direction: column; }
@@ -169,7 +164,6 @@ footer span:first-child { color: white; font-weight: 700; }
   .modal-panel { width: min(390px, calc(100vw - 24px)); max-height: calc(100vh - 24px); }
   .modal-panel video { max-height: calc(100vh - 24px); }
   .about-section { width: calc(100% - 24px); }
-  footer { align-items: flex-start; flex-direction: column; }
 }
 
 @media (max-width: 430px) {
