@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=16" />
+    <link rel="stylesheet" href="styles.css?v=17" />
   </head>
   <body>
     <header class="site-header">
@@ -77,11 +77,18 @@
             </thead>
             <tbody>
               <tr>
-                <td data-label="Video"><span class="table-number">01</span></td>
+                <td data-label="Video"><span class="table-number">Intro</span></td>
                 <th scope="row">Series Introduction</th>
                 <td><span class="status-chip status-approved">Approved</span></td>
                 <td><span class="status-chip status-approved">Complete</span></td>
                 <td data-label="Finished" class="finish-column"><span class="finished-check" aria-label="Finished">✓</span></td>
+              </tr>
+              <tr>
+                <td data-label="Video"><span class="table-number">01</span></td>
+                <th scope="row">Confirmation Bias</th>
+                <td><span class="status-chip status-not-started">Not started</span></td>
+                <td><span class="status-chip status-not-started">Not started</span></td>
+                <td data-label="Finished" class="finish-column"><span class="not-finished" aria-label="Not finished">—</span></td>
               </tr>
               <tr>
                 <td data-label="Video"><span class="table-number">02</span></td>
@@ -134,17 +141,17 @@
               </tr>
               <tr>
                 <td data-label="Video"><span class="table-number">09</span></td>
+                <th scope="row">Decision Paradox</th>
+                <td><span class="status-chip status-not-started">Not started</span></td>
+                <td><span class="status-chip status-not-started">Not started</span></td>
+                <td data-label="Finished" class="finish-column"><span class="not-finished" aria-label="Not finished">—</span></td>
+              </tr>
+              <tr>
+                <td data-label="Video"><span class="table-number">10</span></td>
                 <th scope="row">Multiple Comparisons</th>
                 <td><span class="status-chip status-approved">Approved</span></td>
                 <td><span class="status-chip status-complete">Complete</span></td>
                 <td data-label="Finished" class="finish-column"><span class="finished-check" aria-label="Finished">✓</span></td>
-              </tr>
-              <tr>
-                <td data-label="Video"><span class="table-number">10</span></td>
-                <th scope="row">Mitigating Bias</th>
-                <td><span class="status-chip status-not-started">Not started</span></td>
-                <td><span class="status-chip status-not-started">Not started</span></td>
-                <td data-label="Finished" class="finish-column"><span class="not-finished" aria-label="Not finished">—</span></td>
               </tr>
             </tbody>
           </table>
@@ -158,18 +165,17 @@
             <h2 id="videos-title">Ten ways evidence can fool us</h2>
           </div>
           <div class="filters" aria-label="Filter videos">
-            <button class="filter is-selected" type="button" data-filter="all">All <span>10</span></button>
-            <button class="filter" type="button" data-filter="judgment">Judgment <span>2</span></button>
+            <button class="filter is-selected" type="button" data-filter="all">All <span>11</span></button>
+            <button class="filter" type="button" data-filter="judgment">Judgment <span>3</span></button>
             <button class="filter" type="button" data-filter="selection">Data &amp; Selection <span>4</span></button>
             <button class="filter" type="button" data-filter="evidence">Scientific Evidence <span>3</span></button>
-            <button class="filter" type="button" data-filter="design">Better Design <span>1</span></button>
           </div>
         </div>
 
         <div class="video-grid">
           <article
             class="video-card is-playable"
-            data-category="judgment"
+            data-category="introduction"
             data-video="media/series-trailer-final.mp4?v=2"
             data-title="Series Introduction"
             role="button"
@@ -187,6 +193,17 @@
               <span class="poster-play" aria-hidden="true">▶</span>
             </div>
             <div class="card-body"><h3>Series Introduction</h3><p>How can evidence fool us—and how can we notice?</p></div>
+          </article>
+
+          <article class="video-card" data-category="judgment">
+            <div
+              class="card-cover poster-cover placeholder-cover"
+              role="img"
+              aria-label="Cover image coming soon for Confirmation Bias"
+            >
+              <span class="placeholder-number" aria-hidden="true">01</span>
+            </div>
+            <div class="card-body"><h3>Confirmation Bias</h3><p>Why do we notice evidence that agrees with us?</p></div>
           </article>
 
           <article
@@ -343,6 +360,17 @@
             <div class="card-body"><h3>Winner’s Curse</h3><p>Why are “winning” effects often exaggerated?</p></div>
           </article>
 
+          <article class="video-card" data-category="judgment">
+            <div
+              class="card-cover poster-cover placeholder-cover"
+              role="img"
+              aria-label="Cover image coming soon for Decision Paradox"
+            >
+              <span class="placeholder-number" aria-hidden="true">09</span>
+            </div>
+            <div class="card-body"><h3>Decision Paradox</h3><p>Video details coming soon.</p></div>
+          </article>
+
           <article
             class="video-card is-playable"
             data-category="evidence"
@@ -361,12 +389,6 @@
             <div class="card-body"><h3>Multiple Comparisons</h3><p>How can many tests produce a convincing result by chance?</p></div>
           </article>
 
-          <article class="video-card" data-category="design">
-            <div class="card-cover tone-orange">
-              <span class="orbit orbit-shield" aria-hidden="true"></span>
-            </div>
-            <div class="card-body"><h3>Mitigating Bias</h3><p>What research-design tools reduce these problems?</p></div>
-          </article>
         </div>
       </section>
 
